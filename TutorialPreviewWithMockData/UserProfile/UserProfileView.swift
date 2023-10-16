@@ -69,13 +69,13 @@ struct UserProfileView: View {
 
 
 #Preview("Success Profile") {
-    UserProfileView(user: User(name: "John Doe", age: 25, email: "johndoe@example.com", isStudent: false, gender: "male"))
+    UserProfileView(user: User.mock(.success)!)
 }
 
 #Preview("Required Fields Profile") {
-    UserProfileView(user: User(name: "Jane Smith", age: 30))
+    UserProfileView(user: User.mock(.requiredFields)!)
 }
 
 #Preview("Student Profile") {
-    UserProfileView(user: User(name: "Alice Johnson", age: 21, email: "alice@example.com", isStudent: true, gender: "female"))
+    UserProfileView(user: User.mock(.student)!)
 }
