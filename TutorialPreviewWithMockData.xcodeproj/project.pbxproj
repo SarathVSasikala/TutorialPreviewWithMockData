@@ -16,6 +16,12 @@
 		CE9CB4AC2AD82E9C00B7D866 /* TutorialPreviewWithMockDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB4AB2AD82E9C00B7D866 /* TutorialPreviewWithMockDataUITestsLaunchTests.swift */; };
 		CE9CB4BA2AD8303500B7D866 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB4B92AD8303500B7D866 /* Mockable.swift */; };
 		CE9CB4BD2AD8305000B7D866 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB4BC2AD8304F00B7D866 /* JSONHelper.swift */; };
+		CE9CD30C2ADD3E4200061354 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CD30B2ADD3E4200061354 /* User.swift */; };
+		CE9CD30E2ADD3E5500061354 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CD30D2ADD3E5500061354 /* UserProfileView.swift */; };
+		CE9CD3162ADD4F1100061354 /* UserSuccessMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9CD3122ADD4F1100061354 /* UserSuccessMockResponse.json */; };
+		CE9CD3182ADD4F1100061354 /* RequiredFieldsMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9CD3142ADD4F1100061354 /* RequiredFieldsMockResponse.json */; };
+		CE9CD3192ADD4F1100061354 /* StudentMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9CD3152ADD4F1100061354 /* StudentMockResponse.json */; };
+		CE9CD31B2ADD4F5300061354 /* User+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CD31A2ADD4F5300061354 /* User+Mocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		CE9CB4AB2AD82E9C00B7D866 /* TutorialPreviewWithMockDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPreviewWithMockDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE9CB4B92AD8303500B7D866 /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		CE9CB4BC2AD8304F00B7D866 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		CE9CD30B2ADD3E4200061354 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE9CD30D2ADD3E5500061354 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		CE9CD3122ADD4F1100061354 /* UserSuccessMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserSuccessMockResponse.json; sourceTree = "<group>"; };
+		CE9CD3142ADD4F1100061354 /* RequiredFieldsMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RequiredFieldsMockResponse.json; sourceTree = "<group>"; };
+		CE9CD3152ADD4F1100061354 /* StudentMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StudentMockResponse.json; sourceTree = "<group>"; };
+		CE9CD31A2ADD4F5300061354 /* User+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mocks.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 		CE9CB48D2AD82E9900B7D866 /* TutorialPreviewWithMockData */ = {
 			isa = PBXGroup;
 			children = (
+				CE9CD30A2ADD3E2800061354 /* UserProfile */,
 				CE9CB48E2AD82E9900B7D866 /* TutorialPreviewWithMockDataApp.swift */,
 				CE9CB4902AD82E9900B7D866 /* ContentView.swift */,
 				CE9CB4922AD82E9B00B7D866 /* Assets.xcassets */,
@@ -110,6 +123,7 @@
 		CE9CB4942AD82E9B00B7D866 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CE9CD30F2ADD4E4C00061354 /* Mocks */,
 				CE9CB4B82AD8302200B7D866 /* Protocols */,
 				CE9CB4952AD82E9B00B7D866 /* Preview Assets.xcassets */,
 			);
@@ -147,6 +161,42 @@
 				CE9CB4BC2AD8304F00B7D866 /* JSONHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE9CD30A2ADD3E2800061354 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CD30B2ADD3E4200061354 /* User.swift */,
+				CE9CD30D2ADD3E5500061354 /* UserProfileView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		CE9CD30F2ADD4E4C00061354 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CD3102ADD4E5600061354 /* UserProfile */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CE9CD3102ADD4E5600061354 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CD31A2ADD4F5300061354 /* User+Mocks.swift */,
+				CE9CD3112ADD4E8600061354 /* MockAPIResponses */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		CE9CD3112ADD4E8600061354 /* MockAPIResponses */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CD3142ADD4F1100061354 /* RequiredFieldsMockResponse.json */,
+				CE9CD3152ADD4F1100061354 /* StudentMockResponse.json */,
+				CE9CD3122ADD4F1100061354 /* UserSuccessMockResponse.json */,
+			);
+			path = MockAPIResponses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9CD3162ADD4F1100061354 /* UserSuccessMockResponse.json in Resources */,
+				CE9CD3182ADD4F1100061354 /* RequiredFieldsMockResponse.json in Resources */,
 				CE9CB4962AD82E9B00B7D866 /* Preview Assets.xcassets in Resources */,
+				CE9CD3192ADD4F1100061354 /* StudentMockResponse.json in Resources */,
 				CE9CB4932AD82E9B00B7D866 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +333,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9CB4912AD82E9900B7D866 /* ContentView.swift in Sources */,
+				CE9CD31B2ADD4F5300061354 /* User+Mocks.swift in Sources */,
+				CE9CD30E2ADD3E5500061354 /* UserProfileView.swift in Sources */,
 				CE9CB4BD2AD8305000B7D866 /* JSONHelper.swift in Sources */,
 				CE9CB4BA2AD8303500B7D866 /* Mockable.swift in Sources */,
+				CE9CD30C2ADD3E4200061354 /* User.swift in Sources */,
 				CE9CB48F2AD82E9900B7D866 /* TutorialPreviewWithMockDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
