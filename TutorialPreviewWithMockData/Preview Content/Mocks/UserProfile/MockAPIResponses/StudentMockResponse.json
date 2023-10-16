@@ -1,0 +1,7 @@
+{
+    "name": "Alice Johnson",
+    "age": 21,
+    "email": "alice@example.com",
+    "isStudent": true,
+    "gender": "female"
+}
